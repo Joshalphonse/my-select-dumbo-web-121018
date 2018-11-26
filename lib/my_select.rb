@@ -1,6 +1,6 @@
 def my_select(collection)
  i = 0
- res = []
+ res = Array.new
  while i < collection.length
  selection = yeild(collection[i])
  if selection
