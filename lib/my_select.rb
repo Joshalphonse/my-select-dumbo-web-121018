@@ -1,12 +1,13 @@
 def my_select(collection)
+ # your code here!
  i = 0
- res = Array.new
+ result = Array.new
  while i < collection.length
- selection = yeild(collection[i])
- if selection
-   res << collection[i]
+   condition = yield(collection[i])
+   if condition
+     result << collection[i]
+   end
+   i += 1
  end
- i += 1
-end
-res
+ result
 end
